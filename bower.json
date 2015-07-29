@@ -1,0 +1,10 @@
+{
+  "name": "my-jekyll-grunt-template",
+  "version": "0.1.0",
+  "devDependencies": {
+  },
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "modernizr": "~2.8.3"
+  }
+}

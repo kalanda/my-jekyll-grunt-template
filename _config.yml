@@ -1,0 +1,31 @@
+name: my-jekyll-grunt-template
+
+# Markdown library
+markdown: redcarpet
+
+# Site settings
+baseurl: ""
+url: ""
+
+# _config.build.yml sets future and show_drafts to false on `grunt build`
+future: true
+show_drafts: true
+
+# permalink: '/blog/:title'
+# paginate: 5
+# paginate_path: '/page:num'
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - Vagrantfile
+  - Procfile
+  - assets/js
+  - assets/css
+  - assets/scss
+  - assets/images
+  - bower_components
+
+highlighter: null
+languages: ["en", "es"]
+exclude_from_localizations: ["assets"]

@@ -1,0 +1,6 @@
+global:
+  name: Nombre del sitio
+  title: Titulo del sitio - Punto de partida para el sitio
+  description: Descripción del sitio
+example:
+  example_text: Texto de ejemplo

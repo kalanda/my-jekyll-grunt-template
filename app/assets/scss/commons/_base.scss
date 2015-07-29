@@ -1,0 +1,28 @@
+
+html {
+  background-color: white;
+  font-family: $default-font-family;
+  font-size: 62.5%;
+  @include optimize-legibility();
+}
+
+body {
+  background-color: white;
+  color: black;
+  font-family: $default-font-family;
+  font-size: $font-size-medium;
+  @include optimize-legibility();
+}
+
+button, input {
+  font-family: $default-font-family;
+}
+
+a, button, input {
+  outline: none;
+  @include optimize-legibility();
+}
+
+img {
+  vertical-align: middle;
+}

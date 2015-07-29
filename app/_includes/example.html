@@ -1,0 +1,20 @@
+<div class="example">
+
+  <h1>{% translate example.example_text %}<h1>
+
+  {% translate_file example/example.md %}
+
+  <p>
+  {% if site.lang == "en" %}
+    {% capture link_es %}
+      /{{ site.baseurl_root }}es{% if page.url != '/index.html' %}{{ page.url}}{% else %}/{% endif %}
+    {% endcapture %}
+    <a href="{{ link_es }}">Español</a>
+  {% else %}
+    {% capture link_en %}
+      {{ site.baseurl_root }}{% if page.url != '/index.html' %}{{ page.url}}{% else %}/{% endif %}
+    {% endcapture %}
+    <a href="{{ link_en }}">English</a>
+  {% endif %}
+  </p>
+</div>

@@ -1,0 +1,38 @@
+<!--[if IE ]><meta http-equiv="X-UA-Compatible" content="IE=Edge" /><![endif]-->
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html class="no-js ie ie6 lt-ie10 lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7 ]>    <html class="no-js ie ie7 lt-ie10 lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8 ]>    <html class="no-js ie ie8 lt-ie10 lt-ie9"> <![endif]-->
+<!--[if IE 9 ]>    <html class="no-js ie ie9 lt-ie10"> <![endif]-->
+<!--[if IE 10]>    <html class="no-js ie ie10"><![endif]-->
+<!--[if (gt IE 10)|!(IE)]><!--> <html class="no-js" lang="{{ site.lang }}"> <!--<![endif]-->
+  <head>
+
+    <meta charset="utf-8">
+    <title>{% translate page.title %}</title>
+    <meta name="description" content="{% translate page.description %}">
+
+    <!-- Styles -->
+    <!-- build:css /assets/css/main.min.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/main.css">
+    <!-- endbuild -->
+
+  </head>
+  <body class="{{ page.body_class }}">
+
+    {{ content }}
+
+    <!-- Scripts -->
+    <!-- build:js /assets/js/main.min.js -->
+    <!-- bower:js -->
+    <script src="../bower_components/modernizr/modernizr.js"></script>
+    <script src="../bower_components/jquery/dist/jquery.js"></script>
+    <!-- endbower -->
+    <script src="/assets/js/vendor/retina.js"></script>
+    <script src="/assets/js/main.js"></script>
+    <!-- endbuild -->
+
+  </body>
+</html>
