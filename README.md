@@ -2,29 +2,52 @@
 
 This is a project template for frontend developments using Jekyll and Grunt.
 
-## Requirements 
+## Requirements
 
+Before start you have to install:
+
+* [RybyGems](https://rubygems.org/)
 * [Node.js](http://nodejs.org/)
 * [NPM](https://www.npmjs.com/)
-* [Bundler](http://bundler.io/)
 
 ## Installation
 
-* `git clone <repository-url>` this repository
-* change into the new directory
-* `gem install bundler`
-* `npm install -g grunt-cli`
-* `./install.sh`
+First, install Grunt and Bower globally:
 
-## Running / Development
+	$ npm install -g grunt-cli
+	$ npm install -g bower
+
+Clone this repository:
+
+	$ git clone https://github.com/kalanda/my-jekyll-grunt-template.git
+
+Change into the new directory:
+
+	$ cd my-jekyll-grunt-template
+
+Install Bundler
+
+	$ sudo gem install bundler
+
+Now run clean and install script:
+
+	$ ./install.sh
+
+
+## Development
+
+For development mode run:
 
 	grunt serve
 
-* Visit your app at [http://localhost:9000](http://localhost:9000)
+This will watch your files and automatically rebuild with livereload. 
+Visit your app at [http://localhost:9000](http://localhost:9000)
 
-## Building
+## Build
 
-Run `grunt build` to build a minified, optimized version of our app into the `dist` directory
+To build a minified and optimized version into the `/dist/` directory run:
+
+	grunt build
 
 
 ## License
