@@ -1,16 +1,30 @@
 # my-jekyll-grunt-template
 
-This is a project template for frontend developments using Jekyll and Grunt.
+This is a project template for frontend developments using Jekyll and Grunt. 
+You can install using Vagrant or install it locally. Go forward in this document to see how. 
 
-## Requirements
+After the installation of whatever of the two options, you can run `grunt serve` for development mode and visit your app at [http://localhost:9000](http://localhost:9000). This will watch your files for changes and automatically rebuild and reload in the browser.  
+
+Also you can run `grunt build` to build a minified and optimized version into the `/dist/` directory.
+
+
+## 1. Install using Vagrant
+
+1. Install [Vagrant](https://www.vagrantup.com/downloads.html) and [VirtualBox](https://www.virtualbox.org/)
+2. Then [download the template project](https://github.com/kalanda/my-jekyll-grunt-template/archive/master.zip) and unzip to some folder.
+3. Open a terminal window and go to the new folder with `cd /path/to/folder`
+4. Run `vagrant up` and take a coffee (or two). Don't care about red text and just wait the script to finish installing and provisioning the Vagrant box.
+5. Run `vagrant ssh` to access the box 
+6. Run `cd /vagrant`
+6. Now you can use `grunt serve` or `grunt build`
+
+## 2. Install locally
 
 Before start you have to install:
 
 * [RybyGems](https://rubygems.org/)
 * [Node.js](http://nodejs.org/)
 * [NPM](https://www.npmjs.com/)
-
-## Installation
 
 First, install Grunt and Bower globally:
 
@@ -30,25 +44,9 @@ Install Bundler
 	$ sudo gem install bundler
 
 Now run clean and install script:
-
+	
+	$ ./clean.sh
 	$ ./install.sh
-
-
-## Development
-
-For development mode run:
-
-	grunt serve
-
-This will watch your files and automatically rebuild with livereload. 
-Visit your app at [http://localhost:9000](http://localhost:9000)
-
-## Build
-
-To build a minified and optimized version into the `/dist/` directory run:
-
-	grunt build
-
 
 ## License
 
