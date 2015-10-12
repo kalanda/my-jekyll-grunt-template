@@ -19,13 +19,6 @@ module.exports = function(grunt) {
             baseurl: ''
         },
 
-        wiredep: {
-          task: {
-            src: [ '<%= app.source %>/**/*.html' ],
-            options: { }
-          }
-        },
-
         watch: {
             jekyll: {
               options: { livereload: true },
@@ -354,7 +347,6 @@ module.exports = function(grunt) {
 
     // Define Tasks
     grunt.registerTask('serve', [
-        'wiredep',
         'clean:server',
         'jekyll:server',
         'sass:server',
@@ -366,7 +358,6 @@ module.exports = function(grunt) {
     ]);
 
     grunt.registerTask('build', [
-        'wiredep',
         'clean:dist',
         'jekyll:dist',
         'copy:dist_images',

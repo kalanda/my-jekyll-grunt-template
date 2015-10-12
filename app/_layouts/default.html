@@ -13,9 +13,7 @@
     <meta name="description" content="{% translate page.description %}">
 
     <!-- Styles -->
-    <!-- build:css /assets/css/main.min.css -->
-    <!-- bower:css -->
-    <!-- endbower -->
+    <!-- build:css({app,dist}) /assets/css/app.min.css -->
     <link rel="stylesheet" type="text/css" href="/assets/css/main.css">
     <!-- endbuild -->
 
@@ -25,13 +23,11 @@
     {{ content }}
 
     <!-- Scripts -->
-    <!-- build:js /assets/js/main.min.js -->
-    <!-- bower:js -->
-    <script src="../bower_components/modernizr/modernizr.js"></script>
-    <script src="../bower_components/jquery/dist/jquery.js"></script>
-    <!-- endbower -->
-    <script src="/assets/js/vendor/retina.js"></script>
-    <script src="/assets/js/main.js"></script>
+    <!-- build:js({app,.tmp}) /assets/js/app.min.js -->
+    <script src="bower_components/modernizr/modernizr.js"></script>
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="assets/js/vendor/retina.js"></script>
+    <script src="assets/js/main.js"></script>
     <!-- endbuild -->
 
   </body>
