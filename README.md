@@ -1,9 +1,8 @@
 # my-jekyll-grunt-template
 
-This is a project template for frontend developments using Jekyll and Grunt. 
-You can install using Vagrant or install it locally. Go forward in this document to see how. 
+This is a projects template for frontend developments using Jekyll and Grunt. Two options are available to install. You can install using Vagrant or install it locally. Go forward in this document to see how. 
 
-After the installation of whatever of the two options, you can run `grunt serve` for development mode and visit your app at [http://localhost:9000](http://localhost:9000). This will watch your files for changes and automatically rebuild and reload in the browser.  
+After the installation of either of the two options, you can run `grunt serve` for development mode and visit your app at [http://localhost:9000](http://localhost:9000). This will watch your files for changes and automatically rebuild and reload in the browser.  
 
 Also you can run `grunt build` to build a minified and optimized version into the `/dist/` directory.
 
@@ -19,6 +18,8 @@ Also you can run `grunt build` to build a minified and optimized version into th
 6. Now you can use `grunt serve` or `grunt build`
 
 ## 2. Install locally
+
+---
 
 Before start you have to install:
 
@@ -39,7 +40,7 @@ Change into the new directory:
 
 	$ cd my-jekyll-grunt-template
 
-Install Bundler
+Install Bundler (see troubleshooting below if you are using OSX El Capitan):
 
 	$ sudo gem install bundler
 
@@ -47,6 +48,21 @@ Now run clean and install script:
 	
 	$ ./clean.sh
 	$ ./install.sh
+	
+## Troubleshooting
+---
+** NOTE ONLY for users with OSX 10.11 El Capitan **
+
+OSX 10.11 has a new security feature named "CSR" which protect integrity of some system paths. If you get a message like *"Operation not permitted - /usr/bin/bundle"* when installing Bundler in local you have to disable CSR or maybe use the Vagrant option because is isolated from your system.
+
+To disable CSR:
+
+  1. Boot into the Recovery HD by restarting whilst holding ⌘R.
+  2. Open Terminal (from the Utilities menu).
+  3. Run the following command in Terminal: `csrutil disable`
+  4. Restart.
+  
+---
 
 ## License
 
