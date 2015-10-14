@@ -53,9 +53,9 @@ Now run clean and install script:
 
 ### NOTE ONLY for users with OSX 10.11 El Capitan
 
-OSX 10.11 has a new security feature named "CSR" which protect integrity of some system paths. If you get a message like *"Operation not permitted - /usr/bin/bundle"* when installing Bundler in local you have to disable CSR or maybe use the Vagrant option because is isolated from your system.
+OSX 10.11 has a new security feature named "System Integrity Protection" which protect integrity of some system paths. If you get a message like *"Operation not permitted - /usr/bin/bundle"* when installing Bundler in local you have to disable this security feature or maybe use the Vagrant option because is isolated from your system.
 
-To disable CSR:
+To disable "System Integrity Protection" on OSX 10.11:
 
   1. Boot into the Recovery HD by restarting whilst holding ⌘R.
   2. Open Terminal (from the Utilities menu).
